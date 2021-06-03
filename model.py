@@ -1,8 +1,6 @@
 # Simple Linear Regression
 
-'''
-This model predicts the salary of the employ based on experience using simple linear regression model.
-'''
+
 
 # Importing the libraries
 import numpy as np
