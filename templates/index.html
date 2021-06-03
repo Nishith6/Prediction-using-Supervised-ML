@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Nishith Patel">
+  <meta name="viewport" content="width=device-width, iniyial-scale=1">
+  <title>Prediction using Supervised ML</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <p>Task 1</p><p>Prediction using Supervised ML</p>
+</head>
+
+<body>
+
+ <div class="login">
+ <div>
+	
+	</div>
+<p>Enter the study hours for predict student's score:</p>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Total Hours of Study" placeholder="Total Hours of Study" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+     {{ input_text }}
+   {{ prediction_text }}
+
+ </div>
+ <footer >
+     Copyright ©2021 All rights reserved by Nishith Patel
+ </footer>
+</body>
+
+</html>
